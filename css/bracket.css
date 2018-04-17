@@ -1,0 +1,84 @@
+img {
+    max-height: 60px;
+}
+.round-2 .bottom {
+    padding-top: 142px;
+    border-right:2px solid black;
+}
+.round-3 .bottom {
+    padding-top: 350px;
+    border-right:2px solid black;
+}
+
+.pd-top-20 {
+    padding-top: 20px;
+}
+.pd-top-60 {
+    padding-top: 60px;
+}
+
+#title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#logo {
+    margin-top: -60px;
+    margin-bottom: 120px;
+}
+
+/*
+ *  Flex Layout Specifics
+ */
+
+main{
+    display:flex;
+    flex-direction:row;
+}
+
+.round{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:200px;
+    list-style:none;
+    padding:0;
+}
+
+.round .spacer{ flex-grow:1; }
+.round .spacer:first-child,
+.round .spacer:last-child{ flex-grow:.5; }
+
+.round .game-spacer{
+    flex-grow:1;
+}
+
+/*
+ *  General Styles
+ */
+
+body{
+    font-family:sans-serif;
+    font-size:small;
+    padding:10px;
+    line-height:1.4em;
+}
+
+li.game{
+    padding-left:20px;
+
+    /* Fonte das descrições de classe */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li.game-top{ border-bottom:2px solid black; }
+
+li.game-spacer{ 
+    border-right:2px solid black;
+    min-height:60px;
+}
+
+li.game-bottom{ 
+    border-top:1px solid #aaa;
+}
